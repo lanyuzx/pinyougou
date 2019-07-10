@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:dubbo="http://code.alibabatech.com/schema/dubbo" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+ 
+
+
+	<!-- Dubbox的名称 -->
+	<context:component-scan base-package="cn.lanlan.core.service"/>
+	<!--配置dobbo服务-->
+	<dubbo:application name="pinyougou-sellergoods-service" />
+	<dubbo:registry protocol="zookeeper"
+					address="124.65.155.6:21900" />
+	<!-- 用dubbo协议在20880端口暴露服务 -->
+	<dubbo:protocol name="dubbo" port="20881" />
+	<!-- 声明需要暴露的服务接口 -->
+	<!--<dubbo:service  interface="cn.lanlan.core.service.LLTypeTemplateService" ref="LLTypeTemplateServiceImpl"/>-->
+	<dubbo:service  interface="cn.lanlan.core.service.LLSellerService" ref="LLSellerServiceImpl"/>
+	<!-- 延迟到Spring初始化完成后，再暴露服务,服务调用超时设置为6秒,超时不重试-->
+	<dubbo:provider delay="-1" timeout="15000" retries="0"/>
+	<!--<dubbo:service  interface="cn.e3mail.service.LLItemCategoryService" ref="LLItemCategoryServiceImpl"/>-->
+
+	<!--<dubbo:application name="pinyougou-manager-service"/>-->
+	<!--&lt;!&ndash; Dubbox 连接zookeeper &ndash;&gt;-->
+	<!--&lt;!&ndash;<dubbo:registry protocol="zookeeper" address="127.0.0.1:2181"/>&ndash;&gt;-->
+	<!--<dubbo:registry address="zookeeper://172.19.89.202:2181"/>-->
+
+	<!--&lt;!&ndash; 对外暴露的端口号 默认是20880  &ndash;&gt;-->
+    <!--<dubbo:protocol name="dubbo" port="20881" />-->
+	<!--&lt;!&ndash; 扫描 包   对外暴露接口 并 实例化实现类  &ndash;&gt;-->
+    <!--<dubbo:annotation package="cn.lanlan.core.service" />-->
+   
+   
+</beans>
