@@ -41,6 +41,8 @@
         </headers>
     </http>
 
+
+
     <!-- 认证管理器 -->
     <authentication-manager>
         <authentication-provider user-service-ref="userDetailService">

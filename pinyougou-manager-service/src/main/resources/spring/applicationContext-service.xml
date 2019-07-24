@@ -23,6 +23,7 @@
 	<dubbo:service  interface="cn.lanlan.core.service.LLSpecificationService" ref="LLSpecificationServiceImpl"/>
 	<dubbo:service  interface="cn.lanlan.core.service.LLTypeTemplateService" ref="LLTypeTemplateServiceImpl"/>
 	<dubbo:service  interface="cn.lanlan.core.service.LLItemCatService" ref="LLItemCatServiceImpl"/>
+	<dubbo:service  interface="cn.lanlan.core.service.LLGoodsService" ref="LLGoodsServiceImpl"/>
 	<!-- 延迟到Spring初始化完成后，再暴露服务,服务调用超时设置为6秒,超时不重试-->
 	<dubbo:provider delay="-1" timeout="15000" retries="0"/>
 

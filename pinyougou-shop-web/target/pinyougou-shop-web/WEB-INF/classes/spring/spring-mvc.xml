@@ -40,7 +40,7 @@
 	<dubbo:application name="pinyougou-shop-web" organization="jlc"/>
 	<dubbo:registry protocol="zookeeper" address="124.65.155.6:21900"/>
 	<dubbo:reference interface="cn.lanlan.core.service.LLBrandService" id="LLBrandServiceImpl" timeout="600000" />
-	<!--<dubbo:reference  interface="cn.lanlan.core.service.LLTypeTemplateService" id="LLTypeTemplateServiceImpl" timeout="6000"/>-->
+	<dubbo:reference  interface="cn.lanlan.core.service.LLGoodsService" id="LLGoodsServiceImpl" timeout="6000"/>
 	<!--<dubbo:reference  interface="cn.content.service.LLContentService" id="LLContentServiceImpl" timeout="6000"/>-->
 	<!--<dubbo:reference interface="cn.search.service.LLSearchService" id="LLSearchServiceImpl" timeout="6000"/>-->
 

@@ -11,6 +11,7 @@
         <module name="pinyougou-interface" />
         <module name="pinyougou-manager-service" />
         <module name="pinyougou-manager-web" />
+        <module name="pinyougou-pojo" />
         <module name="pinyougou-sellergoods-service" />
         <module name="pinyougou-shop-web" />
       </profile>

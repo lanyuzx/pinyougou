@@ -69,6 +69,7 @@ cn/lanlan/core/pojo/address/AddressQuery.class
 cn/lanlan/core/pojo/template/TypeTemplateQuery.class
 cn/lanlan/core/pojo/item/Item.class
 cn/lanlan/core/pojo/address/ProvincesQuery$Criteria.class
+cn/lanlan/core/pojo/pojogroup/LLGoodsGroup.class
 cn/lanlan/core/pojo/address/CitiesQuery$Criteria.class
 cn/lanlan/core/pojo/good/GoodsDescQuery$Criteria.class
 cn/lanlan/core/pojo/address/ProvincesQuery$Criterion.class

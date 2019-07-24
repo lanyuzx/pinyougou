@@ -3,6 +3,7 @@ cn/lanlan/core/mapper/SellerDao.class
 cn/lanlan/core/mapper/SpecificationOptionDao.class
 cn/lanlan/core/dao/seller/SellerDao.class
 cn/lanlan/core/dao/user/UserDao.class
+cn/lanlan/core/mapper/GoodsDao.class
 cn/lanlan/core/dao/address/CitiesDao.class
 cn/lanlan/core/dao/address/AreasDao.class
 cn/lanlan/core/dao/item/ItemCatDao.class
@@ -10,6 +11,7 @@ cn/lanlan/core/dao/good/BrandDao.class
 cn/lanlan/core/dao/good/GoodsDescDao.class
 cn/lanlan/core/dao/ad/ContentDao.class
 cn/lanlan/core/dao/template/TypeTemplateDao.class
+cn/lanlan/core/mapper/GoodsDescDao.class
 cn/lanlan/core/dao/order/OrderItemDao.class
 cn/lanlan/core/dao/specification/SpecificationDao.class
 cn/lanlan/core/dao/specification/SpecificationOptionDao.class

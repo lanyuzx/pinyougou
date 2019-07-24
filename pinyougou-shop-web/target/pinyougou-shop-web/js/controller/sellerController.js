@@ -42,8 +42,8 @@ app.controller('sellerController' ,function($scope,$controller   ,sellerService)
 		serviceObject.success(
 			function(response){
 				if(response.flag){
-					//重新查询 
-		        	$scope.reloadList();//重新加载
+					//注册成功跳转登录页面
+					location.href="shoplogin.html";
 				}else{
 					alert(response.message);
 				}

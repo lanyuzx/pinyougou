@@ -2,3 +2,4 @@ cn/lanlan/core/service/impl/LLTypeTemplateServiceImpl.class
 cn/lanlan/core/service/impl/LLItemCatServiceImpl.class
 cn/lanlan/core/service/impl/LLBrandServiceImpl.class
 cn/lanlan/core/service/impl/LLSpecificationServiceImpl.class
+cn/lanlan/core/service/impl/LLGoodsServiceImpl.class
