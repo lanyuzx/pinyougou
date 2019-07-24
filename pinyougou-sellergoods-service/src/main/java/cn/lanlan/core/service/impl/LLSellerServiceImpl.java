@@ -70,4 +70,7 @@ public class LLSellerServiceImpl implements LLSellerService {
        sellerDao.updateByPrimaryKey(seller);
 
     }
+
 }
+
+
